@@ -1,1 +1,7 @@
-
+# roles/procedimiento.SRVSITRFTPPROC2/vars/main.yml
+---
+services:
+  - name: TapiSrv
+wait_time: 30
+max_retries: 3
+delay_between_retries: 10
