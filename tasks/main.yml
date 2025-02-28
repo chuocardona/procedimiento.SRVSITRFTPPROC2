@@ -1,1 +1,6 @@
+# tasks/main.yml
+- name: Detener el servicio de Windows
+  include_tasks: windows_service_stop.yml
 
+- name: Reiniciar el servicio de Windows
+  include_tasks: windows_restart.yml
