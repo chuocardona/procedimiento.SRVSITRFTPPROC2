@@ -1,0 +1,6 @@
+---
+- name: Ejecutar tareas en servidores Windows
+  hosts: windows_servers  # Grupo de hosts definido en el inventario
+  gather_facts: no  # No recolectar facts para mayor velocidad
+  roles:
+     - procedimiento.SRVSITRFTPPROC2
